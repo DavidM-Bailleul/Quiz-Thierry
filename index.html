@@ -9,9 +9,11 @@
 <body>
     <div class="quiz-container">
         <h1>Quiz</h1>
-        <p id="question">A qui est cette voix ?</p>
-        <input type="text" id="answer" placeholder="Votre réponse...">
-        <button onclick="checkAnswer()">Soumettre</button>
+        <!-- Ajout de l'élément audio avec l'URL du fichier sur GitHub -->
+        <audio id="audio" src="https://tonnomutilisateur.github.io/quiz/audio/audio.mp3"></audio>
+        <p id="question" class="hidden">A qui est cette voix ?</p>
+        <input type="text" id="answer" class="hidden" placeholder="Votre réponse...">
+        <button id="submit" class="hidden" onclick="checkAnswer()">Soumettre</button>
         <p id="hint" class="hidden">Indice : La réponse est le prénom d'un célèbre chanteur français.</p>
         <p id="feedback"></p>
         <p id="museum" class="hidden">Musée</p>
