@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz avec Indice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <p id="question">A qui est cette voix ?</p>
+        <input type="text" id="answer" placeholder="Votre réponse...">
+        <button onclick="checkAnswer()">Soumettre</button>
+        <p id="hint" class="hidden">Indice : La réponse est le prénom d'un célèbre chanteur français.</p>
+        <p id="feedback"></p>
+        <p id="museum" class="hidden">Musée</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
